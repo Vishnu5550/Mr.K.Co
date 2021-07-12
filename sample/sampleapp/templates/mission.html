@@ -1,0 +1,320 @@
+{% load static%}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" >
+    <link rel="" href="">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<title>Mr.K & Co Funds</title>
+<link rel="shortcut icon" href="{% static 'images/lo2-removebg-preview.png' %}" type="image/x-icon">
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+<style>
+
+
+body {
+  font-family: Arial;
+  font-size: 15px;
+}
+#ani{
+  animation-delay: 5sec;
+}
+.containera {
+    
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.containera img {vertical-align: middle;}
+
+ .containera .content {
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 15px;
+  
+}
+
+    body{
+      /*background-image: url('bgimg.jpg');
+      background-repeat: no-repeat;
+      background-attachment:fixed;
+      background-size: 100% 100%;*/  
+        background-image: url("{% static 'images/bgimg.jpg'%}");
+        
+        background-repeat: no-repeat;
+        background-size: 100% 550px;
+    }
+  
+</style>
+<link rel="stylesheet" href="{% static 'timelinecss.css' %}">
+</head>
+  <body>
+    
+    <!-- JavaScript Bundle with Popper -->
+<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+<nav class="navbar navbar-expand-lg fixed-top navbar-light nav-bg bg-light ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="{% static 'images/lo-removebg-preview.png' %}" alt="logo" style="height: 50px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto my-2 ms-lg-0">
+        <li class="nav-item">
+          <a class="nav-link " href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Mission</a>
+        </li>
+        
+        <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact Us</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/FAQ">FAQ?</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Trust
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="https://manithamsocialworkorganization.org/">Manitham Trust</a></li>
+            <li><a class="dropdown-item" href="http://www.nizhalcharitabletrust.org/">Nizhal Charitable Trust</a></li>
+            <li><a class="dropdown-item" href="https://ngolist.net/namakkal-don-bosco-anbu-illam-society/">Namakkal Don Bosco Anbu Illam</a></li>
+            <li><a class="dropdown-item" href="http://truelightinternationalindia.com/">True Light International India</a></li>
+            <li><a class="dropdown-item" href="https://www.hugedomains.com/domain_profile.cfm?d=lovinghandsindia&e=com">Loving Hands India</a></li>
+</ul>
+
+        </li>
+        
+      </ul>
+      <a class="btn btn-outline-primary " href="/sign" > Sign In </a>
+      &nbsp;&nbsp;&nbsp;&nbsp;<a class="btn btn-outline-primary " href="/register" > Register </a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+    </div>
+  </div>
+</nav>
+<br>
+<br>
+<br>
+<br><br>
+
+
+<div class="containera">
+    
+    <img src="{% static 'images/intro1.jpg' %}" alt="Notebook" style="width: 100%;border-radius: 10px; " class="img-responsive">
+    <div class="content">
+        <img src="{% static 'images/lo2-removebg-preview.png' %}" alt=".." style="width: 50px;height: 100px;"class="img-responsive float-start animate__animated animate__heartBeat animate__infinite" >
+        <h1 style=" color: green; text-align: right;" class="animate__animated animate__flash animate__infinite animate__delay-1s animate__slow">
+       Mr.K & Co</h1>
+      <p style="text-align: right;" >Raise Money for Life Events<br> Raise Money for Nonprofit Causes <br>
+        Raise Money for Creative Projects <br>
+        Raise Money with a Crowdfunding Campaign </p>
+    
+    </div>
+  </div>
+  <br>
+  <div class="container-fluid" style="background-image: linear-gradient(to right,rgb(0, 255, 42),rgb(3, 88, 17)); width: 100%; height: 350px;">
+    <div class="row">
+        <div class="col">
+            <h1 style="text-align: center; font-family:Arial, Helvetica, sans-serif;font-size: 30pt;padding-top: 125px;font-weight:900;font-style: italic; color: white;">Our Story</h1>
+            <h3 style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: xx-large;color: white;">We're building a transparent, inspiring & personalised way to make change</h3>
+        </div>
+    </div>
+  </div>
+  <br><br>
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col">
+                <h1 style="text-align: center; font-family:Arial, Helvetica, sans-serif; color:black; font-size: 30pt;font-weight: bold;background-image: linear-gradient(to left,rgb(0, 255, 42),rgb(3, 88, 17));">Why we started?</h1>
+                <h3 style="text-align: center; font-style: oblique;">When you see something that needs to change in your community what do you do?</h3>
+                <br>
+                <br>
+                <h3 style="text-align: center;font-style: oblique;">Shout at the tv that ‘someone should do something about it’? Rant online about how broken the system is and how people just don’t ‘get it’?</h3>
+                <br>
+                <h3 style="text-align: center;font-style: oblique;">What if instead of doing that, we all put up our hand to do something - big or small.</h3>
+                <br>
+                <h3 style="text-align:  center;font-style: oblique;">All around the world, there are millions of people who already do just that. We built Chuffed.org for them. To make it incredibly simple for them to fundraise. To make it easy for them to find a community of people who wanted to support them. And to give the rest of us a more transparent and effective way of making the world we want to see.</h3>
+
+            
+            </div>
+    </div>
+  </div>
+  <div class="container">
+      <div class="row">
+          <div class="d-grid gap-4 col-lg-6 mx-auto" style="background-image: linear-gradient(to right,rgb(0, 255, 42),rgb(3, 88, 17));padding: 15px;"><h1 style="border: 3px black solid; text-align: center;"> TimeLine of Mr.K & Co</h1>
+          </div>
+      </div>
+  </div>
+  
+
+  <div class="wrapper" >
+          <div class="center-line">
+      <a  href="#" class="scroll-icon"><i class="bi bi-arrow-up-circle"></i></a>
+    </div>
+    <div class="row row-1">
+      <section>
+        <i class="icon bi bi-house-fill" style="padding: 5px;"></i>
+        <div class="details">
+            <img src="{% static 'images/lo2-removebg-preview.png' %}" alt="Logo" style="width: 50px;height: 50px;">
+          <span class="title">Start</span>
+          <span>8th Jun 2021</span>
+        </div>
+        <p>The First Line of Code was Started</p>
+        <div >
+          
+          <i>- by Founder</i>
+        </div>
+      </section>
+    </div>
+    <div class="row row-2">
+      <section>
+        <i class="icon bi bi-star-fill"></i>
+        <div class="details">
+            <i class="bi bi-building"></i>
+          <span class="title">Start the Company</span>
+          <span>15th Feb 2030</span>
+        </div>
+        
+        <p>The Contruction of First Branch was started in TamilNadu, India</p>
+        
+      </section>
+    </div>
+    <div class="row row-1">
+        <section>
+          <i class="icon bi bi-cash" style="padding: 5px;"></i>
+          <div class="details">
+            <i class="bi bi-cash-stack"></i>
+              <span class="title">Start to Raise Fund</span>
+            <span>29th Nov 2030</span>
+          </div>
+          <p>Company branch is started to serve </p>
+          
+        </section>
+      </div>
+      <div class="row row-2">
+        <section>
+          <i class="icon bi bi-award-fill"></i>
+          <div class="details">
+              <i class="bi bi-building"></i>
+            <span class="title">1000+ Campaign</span>
+            <span>15th Feb 2031</span>
+          </div>
+          
+          <p>1000+ Campaign was Created by Users</p>
+          
+        </section>
+      </div>
+    <div class="row row-1">
+      <section>
+        <i class="icon bi bi-shield"></i>
+        <div class="details">
+          <span class="title">Campaign Completed</span>
+          <span>3 Jun 2032</span>
+        </div>
+        <p> 500+ Campaign was completed Successfully</p>
+        
+      </section>
+    </div>
+    <div class="row row-2">
+      <section>
+        <i class="icon bi bi-pin-map"></i>
+        <div class="details">
+          <span class="title">Wood Anniversary </span>
+          <span>15th Feb 2035</span>
+        </div>
+        <p>Mr.K & Co was celebrated the <i>'WOOD ANNIVERSARY'</i></p>
+        
+      </section>
+    </div>
+    <div class="row row-1">
+      <section>
+        <i class="icon bi bi-people"></i>
+        <div class="details">
+          <span class="title">Campaign Completed</span>
+          <span>19th Jun 2037</span>
+        </div>
+        <p>Mr.K & Co was completed 1500+ Campaign Successfully</p>
+        
+      </section>
+    </div>
+    <div class="row row-2">
+      <section>
+        <i class="icon bi bi-flag"></i>
+        <div class="details">
+          <span class="title">Start Next Branch</span>
+          <span>15th Feb 2040</span>
+        </div>
+        <p>Mr.K & Co was celebrated the <i>'TIN ANNIVERSARY'</i> <br> And started the next branch in <i>'Paris'</i></p>
+        
+      </section>
+    </div>
+    <div class="row row-1">
+        <section>
+          <i class="icon bi bi-gem"></i>
+          <div class="details">
+            <span class="title">Silver Jubilee</span>
+            <span>15th Feb 2055</span>
+          </div>
+          <p>Mr.K & Co was celebrated the <i>'Silver Jubilee'</i></p>
+          
+        </section>
+      </div>
+  </div>
+  <br>
+    <div class="container">
+      <div class="row">
+          <div class="d-grid gap-4 col-lg-4 mx-auto" style="border-radius: 10px;background-image: linear-gradient(to right,rgb(0, 255, 42),rgb(3, 88, 17));padding: 15px;"><h1 style="border: 3px black solid; text-align: center;">Our Team</h1>
+          </div>
+      </div>
+  </div>  <br>
+<div class="container">
+  <div class="row">
+    
+ {% for dest in dests%}
+    <div class="col-lg-4" style="padding-top: 20px;">
+      <div class="card" style="width: 18rem;">
+        <span style="padding-left: 30px;"><img src="{% static 'images/profil.png' %}" class="card-img-top" alt="..." style="border-radius: 50%;width: fit-content;height: auto;"></span>
+        <div class="card-body">
+          <h5 class="card-title" style="text-align: center;">{{dest.name}}</h5>
+          <h6 class="card-subtitle mb-2 text-muted" style="text-align: center;">{{dest.sub}}</h6>
+          <p class="card-text">Mr.K & Co was founded by Mr.Vishnu.P <br>The Mr.k & Co was establised in 2030 In Tamil Nadu ,India.
+           </p>
+          
+      </div>
+    </div>
+  </div>
+ {% endfor %}
+    
+</div>
+  </div>
+  <br><br>
+  <div class="container-fluid bottom navbar-dark bg-dark">
+      
+    <p style="text-align: center; color: white;"> &#169; 2021 - 2022 | Mr.K & Co Funds. | All Rights Reserved with Copyright & TradeMarks</p>
+    <div class="container">
+      <div class="row">
+          <div class="d-grid gap-4 col-lg-6 mx-auto" ><h1 style="text-align: center;"><a class="btn btn-outline-light" href="/services">Our Services</a></h1>
+          </div>
+      </div>
+  </div>
+  </div>
+  
+</body>
+  </html>

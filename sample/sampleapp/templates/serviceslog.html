@@ -1,0 +1,119 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" >
+    <link rel="" href="">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<title>Mr.K & Co Funds</title>
+<link rel="shortcut icon" href="{% static 'images/lo2-removebg-preview.png' %}" type="image/x-icon">
+<style>
+ #hov:hover{
+  color: black;
+  text-decoration: underline;
+  text-transform: uppercase;
+} 
+::selection {
+  color: rgb(0, 255, 98);
+  background:transparent;
+}
+</style>
+</head>
+<body>
+  
+  <!-- JavaScript Bundle with Popper -->
+<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+<nav class="navbar navbar-expand-lg navbar fixed-top navbar-light bg-light">
+<div class="container-fluid">
+  <a class="navbar-brand" href="#">
+    <img src="{% static 'images/lo-removebg-preview.png' %}" alt="logo" style="height: 50px;">
+  </a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      
+      <li class="nav-item">
+        <a class="nav-link " id="hov" href="/indexlog">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " id="hov"  href="/missionlog">Mission</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" id="hov" href="/contactlog">Contact Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="hov" href="/FAQlog">FAQ?</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="hov" href="/donate">Donate</a>
+      </li>
+      <li class="nav-item dropdown " >
+        <a class="btn btn-outline-primary dropdown-toggle" id="hov" href="" data-bs-toggle="dropdown" aria-expanded="false"> Edit Profile</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" id="hov" href="/updateperson">Personal Detail</a></li>
+          <li><a class="dropdown-item" id="hov" href="/updateimg">Photo</a></li>
+          <li><a class="dropdown-item" id="hov" href="/updatefiles">Document</a></li>
+          <li><a class="dropdown-item" id="hov" href="/updatecampfiles">Campaign Document</a></li>
+</ul>
+      </li>
+    </ul>
+    <a class="btn btn-outline-primary " id="hov" href="/startasfund" > Start Your Campaign </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+  <a class="btn btn-outline-primary " id="hov" href="/" > Log OUT </a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+  </div>
+</div>
+</nav>
+<br><br><br>
+<br>
+<div class="container">
+  <div class="row">
+      <div class="d-grid gap-4 col-lg-6 mx-auto" style="border-radius: 10px; background-image: linear-gradient(to right,rgb(0, 255, 42),rgb(3, 88, 17));padding: 15px;"><h1 style="border: 3px black solid; text-align: center;">Our Headquarters</h1>
+      </div>
+  </div>
+</div>
+<br>
+
+<img src="{% static 'images/offfloc.PNG' %}" alt="office" style="width: 100%;height: 500px;">
+<br>
+<br>
+<div class="container">
+  <div class="row">
+      <div class="d-grid gap-4 col-lg-6 mx-auto" style="border-radius: 10px; background-image: linear-gradient(to right,rgb(0, 255, 42),rgb(3, 88, 17));padding: 15px;"><h1 style="border: 3px black solid; text-align: center;">Our Branches in World</h1>
+      </div>
+  </div>
+</div>
+<br>
+<img src="{% static 'images/officeloc.PNG' %}" alt="office" style="width: 100%;height: 500px;">
+<br>
+<br>
+<div class="container">
+  <div class="row">
+      <div class="d-grid gap-4 col-lg-6 mx-auto" style="border-radius: 10px; background-image: linear-gradient(to right,rgb(0, 255, 42),rgb(3, 88, 17));padding: 15px;"><h1 style="border: 3px black solid; text-align: center;">Our Fundraiser in World</h1>
+      </div>
+  </div>
+</div>
+<br>
+<img src="{% static 'images/world.gif' %}" alt="service" style="width: 100%;height: 500px;">
+<br><br><br>
+
+<div class="container-fluid bottom navbar-dark bg-dark">
+      
+  <p style="text-align: center; color: white;"> &#169; 2030 - 2075 | Mr.K & Co Funds. | All Rights Reserved with Copyright & TradeMarks</p>
+  <div class="container">
+    <div class="row">
+        <div class="d-grid gap-4 col-lg-6 mx-auto" ><h1 style="text-align: center;"><a class="btn btn-outline-light" href="#">Our Services</a></h1>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,427 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" >
+    <style>
+     body{
+    background-image: url("{% static 'images/treeimg.jpg' %}");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+       #tex{
+        font-size:40pt;
+      
+        font-weight:bolder;
+       }
+       #tex1{
+         font-size: 25pt;
+       }
+     
+     @media(max-width: 440px){
+       #tex{
+        font-size:10pt;
+        
+        font-weight:bold;
+       }
+       #tex1{
+         font-size: 5pt;
+       }
+     }
+     @media(max-width: 790px){
+       #tex{
+        font-size:20pt;
+        
+        font-weight:bold;
+       }
+       #tex1{
+         font-size: 10pt;
+       }
+     }
+     .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+.cont {
+  position: relative;
+  width: 50%;
+}
+.cont:hover .overlay {
+  height: 100%;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+     .text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+   #bottext{
+     position:absolute;
+     bottom: 10px;
+     left: 50%;
+     right: 50%;
+     transform: translate(-50%, -50%);
+   }
+   .bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+#btf{
+  position: fixed;
+  bottom: 100px;
+  right: 10px;
+}
+#ourwork{
+  background-image: radial-gradient(gray,white);
+}
+#hel{
+  background-color: white;
+}.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+::selection {
+  color: rgb(0, 255, 98);
+  background:transparent;
+}
+#hov:hover{
+  color: black;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+</style>
+
+    </style>
+    <link rel="" href="">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<title>Mr.K & Co Funds</title>
+<link rel="shortcut icon" href="{% static 'lo2-removebg-preview.png' %}" type="image/x-icon">
+</head>
+  <body>
+    <div id="loader"></div>
+    <!-- JavaScript Bundle with Popper -->
+<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+<nav class="navbar navbar-expand-lg navbar fixed-top navbar-light "style="background-color: rgb(250, 250, 250,1);">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      
+      <img src="{% static 'lo-removebg-preview.png' %}" alt="logo" style="height: 50px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" id="hov" href="/indexlog" style="color: black;">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="hov" href="/missionlog">Mission</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" id="hov" href="/contactlog">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="hov" href="/FAQlog">FAQ?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="hov" href="/donate">Donate</a>
+        </li>
+        
+        <li class="nav-item dropdown " >
+          <a class="btn btn-outline-primary dropdown-toggle" id="hov" href="" data-bs-toggle="dropdown" aria-expanded="false"> Edit Profile</a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" id="hov" href="/updateperson">Personal Detail</a></li>
+            <li><a class="dropdown-item" id="hov" href="/updateimg">Photo</a></li>
+            <li><a class="dropdown-item" id="hov" href="/updatefiles">Document</a></li>
+            <li><a class="dropdown-item" id="hov" href="/updatecampfiles">Campaign Document</a></li>
+  </ul>
+        </li>
+      </ul>
+     
+      <a class="btn btn-outline-primary " id="hov" href="/campaign" > Start Your Campaign </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     
+      <a class="btn btn-outline-primary " id="hov" href="/" > Log OUT </a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      
+    </div>
+  </div>
+</nav>
+<br>
+<br>
+<br>
+
+<!--<marquee behavior="scroll" direction="left" style="background-image: linear-gradient(to left,rgb(94, 240, 245),rgb(28, 175, 180));">hello</marquee>-->
+<!--<button type="button" class="btn btn-success rounded-pill" id="btf"><i class="bi bi-whatsapp" ></i>   Chat</button>-->
+<a class="btn btn-outline-success btn-lg rounded-pill fixed" href="https://t.me/joinchat/2_-T51ny9K1hMzg9" role="button"id="btf"><i class="bi bi-telegram " ></i> &nbsp;&nbsp;Chat&nbsp; </a>
+<div style="background-color: white;">
+<div class="container-fluid" id="hel">
+  <div class="row">
+   <div class="col-lg-8">
+    <img src="{% static 'images/baby-1.jpg' %}" alt="baby" style="width: 100%;height: 500px;" id="babyimg">     
+  </div>
+  <div class="col-lg-4">
+    <h1 id="tex">Need Funds to pay For a Medical Emergency or Social Cause?</h1> <br><h4 id="tex1">Join the community</h4></p>
+  </div>
+</div>
+</div>
+<br>
+<h2 style="font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;text-shadow: 3px black; text-decoration:dashed;">Our Works:</h2>
+<br>
+<h3><p style="text-align: justify;font-family:'Times New Roman', Times, serif;" id="ourwork"><img src="{% static 'images/ourWork-removebg-preview.png' %}" class="rounded float-start" alt="...">Thousands fight for their lives from fatal diseases and unforeseen medical emergencies every day. Families are often left drained of all their savings due to insufficient insurance coverage and are forced to take loans at high interest rates. Many also have to risk delaying or stopping treatment due to lack of funds.
+  At <a href="index.html">Mr.K & Co</a>, we believe saving lives is a service. With the help of millions of donors online, who step up to generously support friends, colleagues and strangers with contributions, we are trying to reach each and every individual across India to ensure that no life is ever lost due to lack of money.</p>
+  <br></h3>
+  </div>
+  <br>
+  
+  <div class="container">
+    <div class="row">
+        <div class="d-grid gap-4 col-lg-6 mx-auto" style="padding: 15px;"><h1 style=" text-align: center;">Our Top Funder</h1>
+        </div>
+    </div>
+</div><br><div class="container">
+    <div class="row">
+      <div class="col-lg-4" style="padding-top: 100px;">
+        <div class="card" style="width: 18rem;background-color: rgba(252, 252, 252, 0.6);border-radius: 25px;">
+          <span style="padding-left: 30px;"><img src="{% static 'images/profil.png' %}" class="card-img-top" alt="..." style="border-radius: 50%;width: fit-content;height: auto;"></span>
+          <div class="card-body">
+            <h5 class="card-title" style="text-align: center;">Mr.Ajith</h5>
+          <p class="card-text">Mr.Ajith was in the 2<sup>nd</sup> place in Fundraiser from TamilNadu</p>
+            
+        </div>
+      </div>
+    </div>
+   
+      <div class="col-lg-4" style="padding-top: 20px;">
+        <div class="card" style="width: 18rem;background-color: rgba(255, 255, 255, 0.7);border-radius: 25px;">
+          <span style="padding-left: 30px;"><img src="{% static 'images/profil.png' %}" class="card-img-top" alt="..." style="border-radius: 50%;width: fit-content;height: auto;"></span>
+          <div class="card-body">
+            <h5 class="card-title" style="text-align: center;">Mr.Suriya</h5>
+            <p class="card-text">Mr.Suriya was in the 1<sup>st</sup> place in Fundraiser from TamilNadu</p>
+            
+        </div>
+      </div>
+    </div>
+   
+      <div class="col-lg-4" style="padding-top:100px ;">
+        <div class="card" style="width: 18rem;background-color: rgba(255, 255, 255, 0.8);border-radius: 25px;">
+          <span style="padding-left: 30px;"><img src="{% static 'images/profil.png' %}" class="card-img-top" alt="..." style="border-radius: 50%;width: fit-content;height: auto;"></span>
+          <div class="card-body">
+            <h5 class="card-title" style="text-align: center;">Mr.Sharan</h5>
+            <p class="card-text">Mr.Sharan was in the 3<sup>rd</sup> place in Fundraiser from Karnataka</p>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+    <br>
+    
+       
+      <br>
+      <br>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="d-grid gap-2 col-lg-2 mx-auto">
+            <br>
+            <h1 style="color: white;">1000+<sub>Campiagn Successfully completed</sub></h1>
+          </div>
+          <div class="d-grid gap-2 col-lg-2 mx-auto">
+            <br>
+            <h1 style="color: white;">10,000+<sub>Campiagn Created Successfully</sub></h1>
+          </div>
+          <div class="d-grid gap-2 col-lg-2 mx-auto">
+            <br>
+            <h1 style="color: white;">9+Lakhs <sub>Donars</sub></h1>
+          </div>
+          <div class="d-grid gap-2 col-lg-2 mx-auto">
+            <br>
+            <h1 style="color: white;">15+Lakhs <sub>Fundraiser</sub></h1>
+          </div>
+          </div>
+          </div>
+      <br>
+      <div class="container">
+        <div class="row">
+            <div class="d-grid gap-4 col-lg-6 mx-auto" ><h1 style=" text-align: center;">You Can Raise Funds For</h1>
+            </div>
+        </div>
+    </div>  <br>
+    
+    <h6 style="text-align: center;color: white;">Be it for a personal need,social cause or a creative idea-you can count on us for the poject that you want to raise funds for....</h6>
+    <br>
+    <h1 style="text-align: center; text-decoration: underline solid 2PX green;color: white;"><img src="{% static 'lo2-removebg-preview.png' %}" alt=".." style="width: 50px;height: 50px; ;" > WHY MR.K & CO ?</h1>
+    
+<br>
+<br>
+<div class="container">
+      <div class="row">
+        <div class="col-lg-6  col-sm-12">
+          <h4 style="color: white;">1.<img src="{% static 'images/li1.jpg' %}" alt="..." class="img-thumbnail rounded" style="width:25%; " >Industry’s best fundraising success rate </h4>
+
+        </div>
+        <br>
+        <br>
+          <div class="col-lg-6 col-xs-2 animate__animated animate__rotateInDownLeft " id="ani">
+            <h4 style="color: white;">2.<img src="{% static 'images/donate.jpg' %}" alt="..." class="img-thumbnail rounded " style="width:25%;">Supported by 5+ Million Donors</h4>
+  
+          </div>
+          </div>
+          <br>
+          
+          <div class="row">
+            <div class="col-lg-6 col-md-12 ">
+              <h4 style="color: white;">3.<img src="{% static 'images/easy.jpg' %}" alt="..." class="img-thumbnail rounded" style="width:25%;">Easy to  Use Our Website</h4>
+    
+            </div>
+            <br>
+            <br>
+            <div class="col-lg-6 col-xxl-2 ">
+              <h4 style="color: white;">4.<img src="{% static 'images/24x7.png' %}" alt="..." class="img-thumbnail rounded" style="width:25%;">24 X 7 Services</h4>
+            </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-lg-6 ">
+                <h4 style="color: white;">5.<img src="{% static 'images/all payment.jpg' %}" alt="..." class="img-thumbnail rounded" style="width:25%; ">All Payment Modes Are Available</h4>
+      
+              </div>
+              <br>
+              <br>
+              <div class="col-lg-6 ">
+                <h4 style="color: white;">6.<img src="{% static 'images/interpay.jpg' %}" alt="..." class="img-thumbnail rounded" style="width:25%;">International Payment Support</h4>
+              </div>
+              </div>
+        
+    </div>
+    <br>
+    <h3 style="text-align: center;color: white;">To Know more about Mr.k & Co</h3>
+    <button type="button" class="btn btn-primary d-grid gap-4 col-4 mx-auto" data-bs-toggle="modal" data-bs-target="#exampleModal" style="text-align: center;">
+      Know More
+      </button>
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="exampleModalLabel" style="color: white;">About Mr.K & Co</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <img src="{% static 'images/lo2-removebg-preview.png' %}" alt=".." style="width: 100px;height: 100px;" >
+          <h5 style="text-align: justify;" >Established in 2030, "Mr.K & Co" is a UNO listed global Crowdfunding company with more Collecting Funds.We Donate approximately $1.3Billion USD to Orphanges and Trust in all over India
+        
+              In our journey of 5 years, we have catalyzed some of the major changes that have led to India's top 1st company to do Funding services .  Our 'FundRaiser@India' program created more FundRaiser in all over World.</h5>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
+         </div>
+        
+        
+        </div>
+        
+          </div>
+        </div>
+        <br>
+        <div class="container">
+          <div class="row">
+              <div class="d-grid gap-4 col-lg-6 mx-auto" ><h1 style="text-align: center;">To Donate Funds For</h1>
+              </div>
+          </div>
+      </div>
+      <br>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="cont" style="padding-left: 25px;height:200px">
+              <img src="{% static 'images/cancer.jpg' %}" alt="Avatar" class="image" style="width: 100%;height: 100px;">
+              <h5 style="color: white;">Donate For Medical Emergency</h5>
+  <div class="overlay">
+    <a class="text" href="#">Donate</a>
+  </div>
+</div>
+            </div>
+            <div class="col-lg-4">
+              <div class="cont"style="padding-left: 25px; height:200px">
+              <img src="{% static 'images/PHYSICA.jpg' %}" alt="Avatar" class="image"style="width: 100%;height: 100px;">
+              <h5 style="color: white;">Donate For Physically Challenged person</h5>
+  <div class="overlay">
+    <a class="text" href="#">Donate</a>
+  </div>
+</div>
+</div>
+<div class="col-lg-4">
+  <div class="cont"style="padding-left: 25px;height:200px">
+  <img src="{% static 'images/pets.jpg' %}" alt="Avatar" class="image"style="width: 100%;height: 100px;">
+  <br>
+  <h5 style="color: white;">Donate For Pets</h5>
+<div class="overlay">
+<a class="text" href="#">Donate</a>
+</div>
+</div>
+</div>
+
+            </div>
+          </div>
+        
+  <br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="container-fluid bottom navbar-dark bg-dark">
+  <p style="text-align: center; color: white;"> &#169; 2021 - 2022 | Mr.K & Co Funds. | All Rights Reserved with Copyright & TradeMarks</p>
+  <div class="container">
+    <div class="row">
+        <div class="d-grid gap-4 col-lg-6 mx-auto" ><h1 style="text-align: center;"><a class="btn btn-outline-light" href="/serviceslog">Our Services</a></h1>
+        </div>
+    </div>
+</div>
+  
+</div>  
+</body>
+</html>
